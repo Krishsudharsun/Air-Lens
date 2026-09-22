@@ -1,0 +1,12 @@
+{
+  "name": "air-lens",
+  "version": "1.0.0",
+  "private": true,
+  "description": "AIR LENS — personalized air pollution exposure route advisor (team ERROR_503)",
+  "scripts": {
+    "install:all": "npm install --prefix backend && npm install --prefix frontend",
+    "dev:backend": "npm run dev --prefix backend",
+    "dev:frontend": "npm run dev --prefix frontend",
+    "dev": "npx concurrently -n backend,frontend -c green,cyan \"npm:dev:backend\" \"npm:dev:frontend\""
+  }
+}
